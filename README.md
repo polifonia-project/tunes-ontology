@@ -1,6 +1,9 @@
 # tunes-ontology
 A specialisation of [Music Meta](https://github.com/polifonia-project/musicmeta-ontology) for folk music
 
+[![DOI](https://zenodo.org/badge/372536364.svg)](https://zenodo.org/badge/latestdoi/372536364)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 The main novelty at the metadata level consists in grouping *tunes* into *tune families* depending on their similarity (an association that is often performed through manual inspection and analysis). Each `tunes:Tune` is seen as a specialisation of a `mm:MusicEntity` that may belong to a `tunes:TuneFamily`, which in turn specialises `mm:Collection` (please, note that the term *Collection* is seen from an ontology engineering perspective, as this reuses the Collection ontology design pattern in Music Meta).
 
 As can be seen from the diagram/example below, the membership of a `tunes:Tune` to `tunes:TuneFamily` is described by `mm:CollectionMembership`, which provides additional information on the actual strength of such membership. The latter is captured by `mm:CollectionMembership`, which is specialised by two entities here: `tunes:WeakFamilyMembership` and `tunes:NeutralFamilyMembership`.
